@@ -13,14 +13,6 @@ button {
   display: inline-block;
   text-align: center;
   font-size: 2rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  margin-left: 0.2rem;
-  margin-right: 0.5rem;
-  background-color: darkgreen;
-  color: white;
-  border-radius: 50%;
 }
 
 .habit-button {
