@@ -8,30 +8,6 @@ button {
   border: 0;
   cursor: pointer;
 }
-
-.nabvar {
-  font-size: 2rem;
-  padding: 1rem;
-  background-color: blanchedalmond;
-}
-.nabvar-logo {
-  color: green;
-  margin: 0 0.5rem;
-}
-
-.nabvar-count {
-  display: inline-block;
-  text-align: center;
-  font-size: 2rem;
-  width: 2.5rem;
-  height: 2.5rem;
-  line-height: 2.5rem;
-  margin-left: 0.2rem;
-  background-color: greenyellow;
-  color: white;
-  border-radius: 50%;
-}
-
 .habit {
   font-size: 2.5rem;
   padding: 0.5em;
