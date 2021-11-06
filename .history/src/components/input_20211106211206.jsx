@@ -10,13 +10,12 @@ class Input extends Component {
     // console.log(this.inputRef.current.value);
     const name = this.inputRef.current.value;
     name && this.props.onAdd(name); //이름이 있다면(텅텅비어있지않다면) onadd에 name을 전달해 줄거임.
-    // this.inputRef.current.value = ''; //내가 input에 입력한것을 초기화 해줌.
-    this.formRef.current.reset();
+    this.inputRef.current.valule = ''; //내가 input에 입력한것을 초기화 해줌.
   };
   render() {
     return (
       // 사용자가 버튼을 누르면 onSumit의 콜백이 호출 됨
-      <form ref={this.formRef} className="add_form" onSubmit={this.onSubmit}>
+      <form className="add_form" onSubmit={this.onSubmit}>
         <input
           ref={this.inputRef}
           type="text"
