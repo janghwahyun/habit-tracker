@@ -55,13 +55,7 @@ class App extends Component {
     this.setState({ habits });
   };
   //handleReset은 아무것도 받지 않고 처리해 줄거임.
-  handleReset = () => {
-    const habits = this.state.habits.map(habit => {
-      habit.count = 0;
-      return habit;
-    });
-    this.setState({ habits });
-  };
+  handleReset = () => {};
 
   render() {
     return (
