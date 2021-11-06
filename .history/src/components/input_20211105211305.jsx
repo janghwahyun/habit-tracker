@@ -7,9 +7,7 @@ class Input extends Component {
   // onSumit이라는 멤버 변수가 있음
   onSubmit = event => {
     event.preventDefault(); //브라우저의 기본 기능을 취소해줌(event가 발생 될 때, 페이지가 초기화되는 기능)
-    // console.log(this.inputRef.current.value);
-    const name = this.inputRef.current.value;
-    name && this.props.onAdd(name); //이름이 있다면(텅텅비어있지않다면) onadd에 name을 전달해 줄거임.
+    console.log('summit!!!');
   };
   render() {
     return (

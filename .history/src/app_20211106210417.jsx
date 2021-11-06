@@ -46,7 +46,7 @@ class App extends Component {
   };
 
   // handleadd를 만들고 이름의 맞는 새로운 습관을 추가해준다
-  // state를 복하해오고 id를 고유한 아이디를 만들고, 주어진이름을 이용하고
+  // id를 고유한 아이디를 만들고, 주어진이름을 이용하고
   handleAdd = name => {
     const habits = [
       ...this.state.habits,

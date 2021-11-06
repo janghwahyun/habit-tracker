@@ -13,9 +13,13 @@ class Habits extends Component {
   handleDelete = habit => {
     this.props.onDelete(habit);
   };
-
+  // id를 고유한 아이디를 만들고, 주어진이름을 이용하고
   handleAdd = name => {
-    this.props.onAdd(name);
+    const habits = [
+      ...this.state.habits,
+      { id: Date.now(), name: name, count: 0 },
+    ];
+    this.setState({ habits });
   };
 
   render() {
