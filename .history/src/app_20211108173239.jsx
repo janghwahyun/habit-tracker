@@ -58,11 +58,11 @@ class App extends Component {
   };
   //handleReset은 아무것도 받지 않고 처리해 줄거임.
   handleReset = () => {
-    const habits = this.state.habits.map(habit => {
-      if (habit.count != 0) {
+    const habits = this.state.habits.map(item => {
+      if (item.id === habit.id) {
         return { ...habit, count: 0 };
       }
-      return habit;
+      return item;
     });
     this.setState({ habits });
   };
