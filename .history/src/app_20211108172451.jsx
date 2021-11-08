@@ -31,7 +31,7 @@ class App extends Component {
       }
       return item;
     });
-    this.setState({ habits }); //key: value의 이름이 같으면 하나로 써도 무방
+    this.setState({ habits: habits }); //key: value의 이름이 같으면 하나로 써도 무방
   };
   handleDecrement = habit => {
     console.log(`handleDecrement ${habit}`);
