@@ -34,19 +34,12 @@ class App extends Component {
     this.setState({ habits }); //key: value의 이름이 같으면 하나로 써도 무방
   };
   handleDecrement = habit => {
-    // console.log(`handleDecrement ${habit}`);
-    // const habits = [...this.state.habits];
-    // const index = habits.indexOf(habit);
-    // const count = habits[index].count - 1; // 음수 제거, 배열 안에 들어 있는 아이템이 오브젝트를 바로 수정했죠
-    // habits[index].count = count > 0 ? count : 0; //  배열의 count를 직접수정해 매우 냄새나는 코드임
-    // this.setState({ habits: habits });
-    const habits = this.state.habits.map(item => {
-      if (item.id === habit.id) {
-        return { ...habit, count: habit.count - 1 };
-      }
-      return item;
-    });
-    this.setState({ habits });
+    console.log(`handleDecrement ${habit}`);
+    const habits = [...this.state.habits];
+    const index = habits.indexOf(habit);
+    const count = habits[index].count - 1; // 음수 제거, 배열 안에 들어 있는 아이템이 오브젝트를 바로 수정했죠
+    habits[index].count = count > 0 ? count : 0; //  배열의 count를 직접수정해 매우 냄새나는 코드임
+    this.setState({ habits: habits });
   };
   handleDelete = habit => {
     console.log(`handleDelete ${habit}`);

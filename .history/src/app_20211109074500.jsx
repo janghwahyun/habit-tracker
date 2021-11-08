@@ -40,13 +40,13 @@ class App extends Component {
     // const count = habits[index].count - 1; // 음수 제거, 배열 안에 들어 있는 아이템이 오브젝트를 바로 수정했죠
     // habits[index].count = count > 0 ? count : 0; //  배열의 count를 직접수정해 매우 냄새나는 코드임
     // this.setState({ habits: habits });
-    const habits = this.state.habits.map(item => {
-      if (item.id === habit.id) {
-        return { ...habit, count: habit.count - 1 };
+    const habits =this.state.habits.map(   return { ...habit, count: habit.count - 1 };
       }
-      return item;
+      return item;);
+     if (item.id === habit.id) {
+     
     });
-    this.setState({ habits });
+    this.setState({ habits }); 
   };
   handleDelete = habit => {
     console.log(`handleDelete ${habit}`);
