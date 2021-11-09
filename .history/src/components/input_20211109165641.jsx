@@ -1,4 +1,4 @@
-import React, { memo } from 'react';
+import React, { Component, memo } from 'react';
 import reactDom from 'react-dom';
 
 // memo는 안에 porps가 변하지 않으면 pure component처럼 변하지 않는다

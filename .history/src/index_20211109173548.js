@@ -4,11 +4,10 @@ import './index.css';
 import App from './app';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/js/all.js';
-import SimpleHabit from './components/simpleHabit';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SimpleHabit />
+    <SimpleHabitp />
   </React.StrictMode>,
   document.getElementById('root')
 );

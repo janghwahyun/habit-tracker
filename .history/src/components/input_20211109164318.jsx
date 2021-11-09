@@ -1,8 +1,9 @@
-import React, { memo } from 'react';
+import React, { Component } from 'react';
+
+import React from 'react';
 import reactDom from 'react-dom';
 
-// memo는 안에 porps가 변하지 않으면 pure component처럼 변하지 않는다
-const Input = memo(props => {
+const Input = props => {
   //ref를 호출하고 간단하게 원하는 요소에 절달해 주면 됨
   const formRef = React.createRef();
   const inputRef = React.createRef();
@@ -28,6 +29,6 @@ const Input = memo(props => {
       <button className="add-button">Add</button>
     </form>
   );
-});
+};
 
 export default Input;
