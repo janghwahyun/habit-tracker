@@ -17,7 +17,7 @@ const SimpleHabit = props => {
         {count}
       </span>
       <button>
-        <i className="nabvar-logo fas fa-leaf"></i>
+        <i class="fas fa-acorn"></i>
       </button>
     </li>
   );
