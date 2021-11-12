@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-
+import App from './app';
 import reportWebVitals from './reportWebVitals';
 import '@fortawesome/fontawesome-free/js/all.js';
-import Habits from './components/habits';
-import Habit from './components/habit';
 import SimpleHabit from './components/simpleHabit';
+import Habits from './components/habits';
 
 ReactDOM.render(
   <React.StrictMode>
-    <SimpleHabit />
+    <Habits />
   </React.StrictMode>,
   document.getElementById('root')
 );
